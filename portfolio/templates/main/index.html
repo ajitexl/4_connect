@@ -1,0 +1,52 @@
+{% extends 'main/base.html' %}
+
+{%block content %}
+    {% include 'main/nav.html' %}
+    <div class="container">
+        <h1 class="center-align">Home Page</h1> 
+
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                        <img class="materialboxed responsive-img" src="https://lh3.googleusercontent.com/t8RQhTJj0-Bme2BPZbSsKK7hJ50ameWimqEvq_ouogzQuwGwW30tlhrADaP6w_kSWsVgCWwS-xA548fsJXwBagj7L3XUt9gzM1T1nYU1vjcg54U8T_b_3DIaEft3LJnLnSB-Q4UVA872MC2S-gCQONZtzjQ9zwqlr727ziv9sDIesC4ueQs_UbF2ZlLWYtqJ7ztdheB_h3JpHK1ELQwsTkfskvRQ6HJdxLGwzsJ-feHkXOeJWdXv55K5Pzxe2JkAMtnRIWKeYFd0u5uQb7lmTmWeYYJmqAApd_Uv5t-FLT_gro40i2djeVZBKrWIjrKJynChCz4Pv8WavHc7DSNoWzdtPS7LZSLPzXH5PH3s-Oz0m0fcPr5h1sBUXyQ8qg2Y2Z6Lcy3Tc1C18ZcKNVAcBBV_1rEHhtteQqLtTp2yqJwAOL5VoEvm124W46hj0XUIll1L1T0sA4-mmYWxUZhYxx4U_22wYoId8aEoHKq_yHzy9fE_6zVyXwmSyrTKej-vjg1ja1R6_h8iipfxr4w2psVZfwzxUYfYmgi91lQeEH4PqWU-feml8o-AM3fmIUp7Qrz5s_0Ip-9gx9zdLAZQQCA5O2HevmThfwAnMHe0cHtorEfDwOHjOCP45NEBGaopZD7MM-DWh5teHcBbtMciochv4q8TUcKgKm3ft9gI5j8kdBoRQqNwMc5Enyuy=w666-h888-no?authuser=0">
+
+                      <span class="card-title">{{ name }}</span>
+                      <p>
+                      </p>
+                    </div>
+                    <div class="card-action">
+                      <a href="#">Github</a>
+                      <a href="#">Linkedin</a>
+                    </div>
+                  </div>  
+
+            </div>
+            <div class="col s12 m8">
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                      <span class="card-title">About Me</span>
+                      <p>Self-confessed  and problem solver, Ajit is an python/software developer with over 2+ years commercial experience . 
+                        My name is Ajit Kumar Burnwal. I'm a professional Python Developer . I develop bakend script, NLP app/scripts,web applications 
+                        and have a strong background in automation solutions, API development,  Python scripting and the Django Framework. 
+                        I excel at helping clients bring their ideas to life, and when you hire me, I'll do the same for you!
+                        Currently, I'm working with a Suntec web services company as a Python Developer.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+    
+{% endblock %}
+
+{% block script %} 
+<script>
+      document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.materialboxed');
+    var instances = M.Materialbox.init(elems);
+  });
+
+</script>
+{% endblock %}
